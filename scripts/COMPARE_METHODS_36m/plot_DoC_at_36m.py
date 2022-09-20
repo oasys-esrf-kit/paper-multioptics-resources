@@ -19,7 +19,7 @@ tally_h = main_h(do_plot=0)
 CSD_H, X_H, Y_H = plotCSD(
     tally_h, range_limits=[-800,800], compare_profiles=0, rotate_axes_flag=2, rotate_axes_normalization=3, normalize_to_DoC=1,
     direction='x',
-    srw_file='spectral_density_data/CSDx7.0keV_15k_ME_intensity.dat',
+    srw_file='spectral_density_data/36mCSDx7.0keV_15k_ME_intensity.dat',
     do_plot=0)
 
 
@@ -29,7 +29,7 @@ tally_v = main_v(do_plot=0)
 CSD_V, X_V, Y_V = plotCSD(
     tally_v, range_limits=[-800,800], compare_profiles=0, rotate_axes_flag=2, rotate_axes_normalization=3, normalize_to_DoC=1,
     direction='y',
-    srw_file='spectral_density_data/CSDy7.0keV_15k_ME_intensity.dat',
+    srw_file='spectral_density_data/36mCSDy7.0keV_15k_ME_intensity.dat',
     do_plot=0)
 
 CSD_H.append(CSD_V[0])

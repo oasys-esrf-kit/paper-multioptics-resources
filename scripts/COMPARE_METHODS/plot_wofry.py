@@ -104,7 +104,7 @@ if __name__ == "__main__":
                 aperture = Apertures_v[i]
 
             subdirectory = "paper_cases_7keV//sizes_slit%g_%s" % (1e6 * aperture, direction)
-            a = numpy.loadtxt("paper_cases_7keV/trajectories_precalculated/f1_vs_f2_slit%g_%s.dat" % (1e6 * aperture, direction))
+            a = numpy.loadtxt("paper_cases_7keV//f1_vs_f2_slit%g_%s.dat" % (1e6 * aperture, direction))
             F1 = a[:, 0].copy()
             F2 = a[:, 1].copy()
 
